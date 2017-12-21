@@ -1,4 +1,4 @@
-// freeCodeCamp Basic Algorithm Scripting Challenge #2 //
+// freeCodeCamp Basic Algorithm Scripting Challenge #3 //
 // https://www.freecodecamp.org/challenges/check-for-palindromes //
 
 // Return true if the given string is a palindrome. //
