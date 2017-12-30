@@ -15,7 +15,7 @@ repeatStringNumTimes("abc", 3);
 function repeatStringNumTimes(str, num) {
   var strArray = [];
 
-  for (i = 0; i < num; i++) {
+  for (var i = 0; i < num; i++) {
     strArray.push(str);
   }
   return strArray.join("");
