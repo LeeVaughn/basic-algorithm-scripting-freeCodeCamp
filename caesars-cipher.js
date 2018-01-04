@@ -13,9 +13,19 @@ function rot13(str) { // LBH QVQ VG!
 rot13("SERR PBQR PNZC");
 
 // Solution //
-function rot13(str) { // LBH QVQ VG!
+function rot13(str) { // YOU DID IT!
+    var translation = [];
 
-    return str;
+    for (var i = 0; i < str.length; i++) {
+        if (str.charCodeAt(i) < 65 || str.charCodeAt(i) > 90) {
+            translation.push(str.charAt(i));
+        } else if (str.charCodeAt(i) > 77) {
+            translation.push(String.fromCharCode(str.charCodeAt(i) - 13));
+        } else {
+            translation.push(String.fromCharCode(str.charCodeAt(i) + 13));
+        }
+    }
+    return translation.join("");
 }
 
 // Change the inputs below to test
